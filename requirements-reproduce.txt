@@ -1,0 +1,4 @@
+figrecipe==0.45.1
+pymupdf==2.1
+scitex-clew==0.36.4
+scitex-stats==1.0.0

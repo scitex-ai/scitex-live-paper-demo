@@ -25,11 +25,11 @@ Live Paper from the original bytes when requested.
 ## Reproduce
 
 Provide a writable PostgreSQL store for Clew and export its connection as
-`SCITEX_STORE_DSN`. The bundled snapshot can be viewed without PostgreSQL.
+`SCITEX_STORE_DSN`. Viewing the bundled snapshot only needs Live Paper. Reproducing it also needs the packages in `requirements-reproduce.txt`.
 
 ```bash
-uv run python analyse.py
-uv run python build_paper.py
+uv run --with-requirements requirements-reproduce.txt python analyse.py
+uv run --with-requirements requirements-reproduce.txt python build_paper.py
 ```
 
 SciTeX Stats calculates the mean absolute error. FigRecipe renders the plot.
