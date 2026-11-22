@@ -3,7 +3,7 @@
   "schema_version": "1.2.0",
   "provider": {
     "name": "clew",
-    "version": "0.36.3"
+    "version": "0.36.4"
   },
   "project_root": ".",
   "claims": [
@@ -43,7 +43,7 @@
           {
             "id": "p1",
             "kind": "process",
-            "label": "4c4da178bf334f138a0bdc66386812e2",
+            "label": "f340f314bd144fa09265868df180a4a4",
             "script": {
               "file": "analyse.py",
               "hash": "a213fa19cad4e9af58beb98a1eaeabf8d55f9e717920128ee180273593d2e131"
@@ -123,7 +123,7 @@
           {
             "id": "p1",
             "kind": "process",
-            "label": "4c4da178bf334f138a0bdc66386812e2",
+            "label": "f340f314bd144fa09265868df180a4a4",
             "script": {
               "file": "analyse.py",
               "hash": "a213fa19cad4e9af58beb98a1eaeabf8d55f9e717920128ee180273593d2e131"
@@ -196,7 +196,7 @@
           {
             "id": "p1",
             "kind": "process",
-            "label": "4c4da178bf334f138a0bdc66386812e2",
+            "label": "f340f314bd144fa09265868df180a4a4",
             "script": {
               "file": "analyse.py",
               "hash": "a213fa19cad4e9af58beb98a1eaeabf8d55f9e717920128ee180273593d2e131"
