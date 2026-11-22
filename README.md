@@ -6,6 +6,8 @@ and FigRecipe plot trace through a recorded Clew run to that exact archive.
 
 ## Open the paper
 
+[Read the PDF on GitHub](manuscript.pdf). Run the interactive viewer locally:
+
 ```bash
 uv run scitex-live-paper serve .
 ```

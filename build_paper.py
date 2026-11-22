@@ -28,7 +28,7 @@ def render(pairs, mean):
         "The analysis subtracts each reference from its reading and averages the absolute errors.",
         "Results",
         f"Paired readings = {pairs}",
-        f"Mean absolute error = {mean:.3f} mm",
+        f"Mean absolute error = {mean} mm",
         f"Figure 1. Signed errors for the {pairs} simulated readings.",
         "This demonstration uses synthetic data and makes no claim about a physical instrument.",
     ]
