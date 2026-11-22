@@ -6,7 +6,7 @@ from pathlib import Path
 
 import pymupdf
 import scitex_clew as clew
-from scitex_clew._evidence_provider import build_evidence_report
+from scitex_live_paper.evidence import collect_report, find_provider
 
 ROOT = Path(__file__).resolve().parent
 PDF = ROOT / "manuscript.pdf"
@@ -76,7 +76,8 @@ def build():
                 "file_path": MANUSCRIPT.name, "line_number": line,
                 "source_file": source.relative_to(ROOT).as_posix(),
             })
-        report = build_evidence_report(ROOT)
+        _, provider = find_provider("clew")
+        report = dict(collect_report(provider, str(ROOT), claim_ids=list(anchors)))
 
     claims_by_id = {claim["claim_id"]: claim for claim in report["claims"]}
     unresolved = {cid: claims_by_id[cid]["reason"] for cid in anchors
