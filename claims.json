@@ -1,0 +1,32 @@
+{
+  "schema": "scitex-clew.claims/v1",
+  "claims": [
+    {
+      "claim_id": "count",
+      "claim_type": "value",
+      "claim_value": "Paired readings = 8",
+      "file_path": "manuscript.txt",
+      "line_number": 7,
+      "source_file": "results/metrics.json",
+      "status": "verified"
+    },
+    {
+      "claim_id": "mean-error",
+      "claim_type": "value",
+      "claim_value": "Mean absolute error = 0.625 mm",
+      "file_path": "manuscript.txt",
+      "line_number": 8,
+      "source_file": "results/metrics.json",
+      "status": "verified"
+    },
+    {
+      "claim_id": "figure-errors",
+      "claim_type": "figure",
+      "claim_value": "Figure 1. Signed errors for the 8 simulated readings.",
+      "file_path": "manuscript.txt",
+      "line_number": 9,
+      "source_file": "results/reading-errors.png",
+      "status": "verified"
+    }
+  ]
+}

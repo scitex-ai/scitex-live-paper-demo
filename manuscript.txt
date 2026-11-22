@@ -1,0 +1,10 @@
+Sensor calibration on synthetic readings
+Example study | SciTeX Live Paper
+Methods
+The input archive contains paired reference lengths and simulated sensor readings.
+The analysis subtracts each reference from its reading and averages the absolute errors.
+Results
+Paired readings = 8
+Mean absolute error = 0.625 mm
+Figure 1. Signed errors for the 8 simulated readings.
+This demonstration uses synthetic data and makes no claim about a physical instrument.

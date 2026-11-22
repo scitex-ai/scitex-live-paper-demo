@@ -1,0 +1,4 @@
+.venv/
+.scitex/
+__pycache__/
+.pytest_cache/

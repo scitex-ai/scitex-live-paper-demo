@@ -1,0 +1,244 @@
+{
+  "schema": "scitex-live-paper.evidence-report",
+  "schema_version": "1.2.0",
+  "provider": {
+    "name": "clew",
+    "version": "0.36.3"
+  },
+  "project_root": ".",
+  "claims": [
+    {
+      "claim_id": "count",
+      "location": {
+        "file": "manuscript.txt",
+        "line": 7,
+        "label": "manuscript.txt:L7"
+      },
+      "claim_type": "value",
+      "stated_text": "Paired readings = 8",
+      "stated_value": 8,
+      "state": "supported",
+      "reason": "value and sources check out against the recorded run",
+      "source": {
+        "file": "results/metrics.json",
+        "locator": {
+          ".": {
+            "pointer": "/count"
+          }
+        },
+        "value": 8
+      },
+      "details": [
+        "Source file hash matches",
+        "value[text]: claim text 'Paired readings = 8' states the registered value 8 (as 8; tolerance declared)",
+        "value[.]: claimed 8 vs source 8 (|diff|=0; abs_tol=0, rel_tol=0, declared)",
+        "Chain verified (1 runs)"
+      ],
+      "provider_status": {
+        "name": "OK",
+        "code": 0
+      },
+      "graph": {
+        "nodes": [
+          {
+            "id": "p1",
+            "kind": "process",
+            "label": "4c4da178bf334f138a0bdc66386812e2",
+            "script": {
+              "file": "analyse.py",
+              "hash": "a213fa19cad4e9af58beb98a1eaeabf8d55f9e717920128ee180273593d2e131"
+            }
+          },
+          {
+            "id": "f1",
+            "kind": "input",
+            "label": "inputs/observations.zip",
+            "hash": "4ca8ff8c36049fb5d6cb0bc63ad3c9ac33e258e2cdbcf41180c0a8fb393271d1"
+          },
+          {
+            "id": "f2",
+            "kind": "output",
+            "label": "results/metrics.json",
+            "hash": "b25e52a57e46a3ec9d371f70b67ad2f5f7b3568c0f2ce695d61257ccdbec45fe"
+          },
+          {
+            "id": "c",
+            "kind": "claim",
+            "label": "count"
+          }
+        ],
+        "edges": [
+          {
+            "source": "f1",
+            "target": "p1",
+            "kind": "input"
+          },
+          {
+            "source": "p1",
+            "target": "f2",
+            "kind": "output"
+          },
+          {
+            "source": "f2",
+            "target": "c",
+            "kind": "supports"
+          }
+        ],
+        "summary": "level-1 slice: 1 run(s), 2 file(s)"
+      }
+    },
+    {
+      "claim_id": "mean-error",
+      "location": {
+        "file": "manuscript.txt",
+        "line": 8,
+        "label": "manuscript.txt:L8"
+      },
+      "claim_type": "value",
+      "stated_text": "Mean absolute error = 0.625 mm",
+      "stated_value": 0.625,
+      "state": "supported",
+      "reason": "value and sources check out against the recorded run",
+      "source": {
+        "file": "results/metrics.json",
+        "locator": {
+          ".": {
+            "pointer": "/mean_absolute_error_mm"
+          }
+        },
+        "value": 0.625
+      },
+      "details": [
+        "Source file hash matches",
+        "value[text]: claim text 'Mean absolute error = 0.625 mm' states the registered value 0.625 (as 0.625; tolerance declared)",
+        "value[.]: claimed 0.625 vs source 0.625 (|diff|=0; abs_tol=0, rel_tol=0, declared)",
+        "Chain verified (1 runs)"
+      ],
+      "provider_status": {
+        "name": "OK",
+        "code": 0
+      },
+      "graph": {
+        "nodes": [
+          {
+            "id": "p1",
+            "kind": "process",
+            "label": "4c4da178bf334f138a0bdc66386812e2",
+            "script": {
+              "file": "analyse.py",
+              "hash": "a213fa19cad4e9af58beb98a1eaeabf8d55f9e717920128ee180273593d2e131"
+            }
+          },
+          {
+            "id": "f1",
+            "kind": "input",
+            "label": "inputs/observations.zip",
+            "hash": "4ca8ff8c36049fb5d6cb0bc63ad3c9ac33e258e2cdbcf41180c0a8fb393271d1"
+          },
+          {
+            "id": "f2",
+            "kind": "output",
+            "label": "results/metrics.json",
+            "hash": "b25e52a57e46a3ec9d371f70b67ad2f5f7b3568c0f2ce695d61257ccdbec45fe"
+          },
+          {
+            "id": "c",
+            "kind": "claim",
+            "label": "mean-error"
+          }
+        ],
+        "edges": [
+          {
+            "source": "f1",
+            "target": "p1",
+            "kind": "input"
+          },
+          {
+            "source": "p1",
+            "target": "f2",
+            "kind": "output"
+          },
+          {
+            "source": "f2",
+            "target": "c",
+            "kind": "supports"
+          }
+        ],
+        "summary": "level-1 slice: 1 run(s), 2 file(s)"
+      }
+    },
+    {
+      "claim_id": "figure-errors",
+      "location": {
+        "file": "manuscript.txt",
+        "line": 9,
+        "label": "manuscript.txt:L9"
+      },
+      "claim_type": "figure",
+      "stated_text": "Figure 1. Signed errors for the 8 simulated readings.",
+      "stated_value": "Figure 1. Signed errors for the 8 simulated readings.",
+      "state": "supported",
+      "reason": "value and sources check out against the recorded run",
+      "source": {
+        "file": "results/reading-errors.png",
+        "locator": null
+      },
+      "details": [
+        "Source file hash matches",
+        "Chain verified (1 runs)"
+      ],
+      "provider_status": {
+        "name": "OK",
+        "code": 0
+      },
+      "graph": {
+        "nodes": [
+          {
+            "id": "p1",
+            "kind": "process",
+            "label": "4c4da178bf334f138a0bdc66386812e2",
+            "script": {
+              "file": "analyse.py",
+              "hash": "a213fa19cad4e9af58beb98a1eaeabf8d55f9e717920128ee180273593d2e131"
+            }
+          },
+          {
+            "id": "f1",
+            "kind": "input",
+            "label": "inputs/observations.zip",
+            "hash": "4ca8ff8c36049fb5d6cb0bc63ad3c9ac33e258e2cdbcf41180c0a8fb393271d1"
+          },
+          {
+            "id": "f2",
+            "kind": "output",
+            "label": "results/reading-errors.png",
+            "hash": "8c149dc9fc4b54f56ed8394fbe8ff79827b85dd36e646b85368a0d21502d4ee1"
+          },
+          {
+            "id": "c",
+            "kind": "claim",
+            "label": "figure-errors"
+          }
+        ],
+        "edges": [
+          {
+            "source": "f1",
+            "target": "p1",
+            "kind": "input"
+          },
+          {
+            "source": "p1",
+            "target": "f2",
+            "kind": "output"
+          },
+          {
+            "source": "f2",
+            "target": "c",
+            "kind": "supports"
+          }
+        ],
+        "summary": "level-1 slice: 1 run(s), 2 file(s)"
+      }
+    }
+  ]
+}
