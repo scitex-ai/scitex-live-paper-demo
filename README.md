@@ -9,7 +9,7 @@ and FigRecipe plot trace through a recorded Clew run to that exact archive.
 [Read the PDF on GitHub](manuscript.pdf). Run the interactive viewer locally:
 
 ```bash
-uv run scitex-live-paper serve .
+uv run --locked scitex-live-paper serve .
 ```
 
 Open http://127.0.0.1:8765. Hover over a result or the figure edge to see its
